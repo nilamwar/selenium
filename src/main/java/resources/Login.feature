@@ -13,6 +13,9 @@ Feature: OrangeHRM Login Validations
     And clicks the login button
     Then the error message "Required" should be displayed
 
-   
+   Scenario: Validate enter password and username
+    When the user enters username "admin" and password "admin123"
+    And clicks the login button
+    Then the  message "OranggeHrm" should be displayed
     
     
