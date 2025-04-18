@@ -6,9 +6,5 @@ Feature: OrangeHRM Login Validations
   Scenario: Validate error for empty username and password
     When the user enters username "" and password "hvkvki"
     And clicks the login button
-    Then the error message "Invalid credentials" should be displayed
-
-    
-   
-    
-    
+    Then the error message "Required" should be displayed
+ 
