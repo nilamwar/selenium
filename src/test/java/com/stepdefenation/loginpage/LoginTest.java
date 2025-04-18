@@ -43,4 +43,11 @@ public class LoginTest extends BaseTest{
 	        Assert.assertTrue(actualMessage.contains(expectedMsg), "Expected error message not found! Actual: " + actualMessage);
 	        test.info("Correct error message displayed: " + actualMessage);
 	    }
+	    @Then("the page title should be {string}")
+	    public void the_page_title_should_be(String expectedTitle) {
+	        String actualTitle = driver.getTitle();
+	        Assert.assertEquals(actualTitle, expectedTitle);
+	    }
+
+	   
 	}
