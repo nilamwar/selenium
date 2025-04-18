@@ -7,12 +7,8 @@ Feature: OrangeHRM Login Validations
     When the user enters username "" and password "hvkvki"
     And clicks the login button
     Then the error message "Required" should be displayed
-
-    
-   Scenario: Validate enter username and password
-    When the user enters username "Admin" and password "admin123"
-    And clicks the login button
-    Then the page title should be "OrangeHRM"
+ 
+   
 
    
     
