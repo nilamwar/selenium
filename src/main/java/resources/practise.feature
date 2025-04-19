@@ -24,7 +24,8 @@ Feature: OrangeHRM Login Validations
     Then the error message "invalid" should be displayed
     
     Scenario: Validate error for number password and username
-    When the user enters password "#$%&*&^"
-    When the user enters username "#$%^^&("
+    When the user enters username "#$%^^&(87696" and password "#$598i9%&*&^"
     And clicks the login button
     Then the error message "invalid" should be displayed
+
+
